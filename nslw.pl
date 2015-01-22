@@ -12,7 +12,7 @@
 
 $debug = 0; # Set to 1 for verbose output
 
-if ($#ARGV != 1) {die "\nNSLW = NetScreen Log Watch V7\n\nUsage: nslw <flag = src|dst|bth|fwf|fwo> <file>\n\nflags:\n\tsrc = print source IP, protocol, and count\n\tdst = print destination IP, protocol, and count\n\tbth = print source & destination IP, protocol, and count\n\tfwo = print only firewall rules and hit count\n\t fwf = print bth, and firewall:policy_id\n\n";}
+if ($#ARGV != 1) {die "\nNSLW = NetScreen Log Watch\n\nUsage: nslw <flag = src|dst|bth|fwf|fwo> <file>\n\nflags:\n\tsrc = print source IP, protocol, and count\n\tdst = print destination IP, protocol, and count\n\tbth = print source & destination IP, protocol, and count\n\tfwo = print only firewall rules and hit count\n\t fwf = print bth, and firewall:policy_id\n\n";}
 $flag = "$ARGV[0]";
 #
 open (LOG, "< $ARGV[1]") or die "\nCan't open file $ARGV[1]\n";
