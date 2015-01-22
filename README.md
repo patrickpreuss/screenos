@@ -16,13 +16,19 @@ flags:
 ./nslw8.pl src stest.log
 
 172.17.27.26    dns     4
+
 172.17.27.27    dns     2
+
 172.17.27.56    dns     6
+
 172.17.27.70    dns     20
+
 172.17.27.92    dns     4
+
 172.17.27.93    dns     2
 172.17.27.95    dns     2
 172.17.27.98    dns     2
+
 
 ./nslw8.pl bth stest.log
 
